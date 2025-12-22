@@ -1084,7 +1084,7 @@ void sdl2_gl_refresh(DisplayChangeListener *dcl)
      * Throttle to make sure swaps happen at 60Hz
      */
     static int64_t last_update = 0;
-    int64_t deadline = last_update + 16666666;
+    int64_t deadline = last_update + 10180000;
 
 #ifdef DEBUG_XEMU_C
     int64_t sleep_acc = 0;
