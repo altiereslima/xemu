@@ -35,7 +35,7 @@
 uint64_t cpu_get_tsc(CPUX86State *env)
 {
 #ifdef XBOX
-    return muldiv64(qemu_clock_get_ns(QEMU_CLOCK_VIRTUAL), 1000000000,
+    return muldiv64(qemu_clock_get_ns(QEMU_CLOCK_VIRTUAL), 800000000,
                     NANOSECONDS_PER_SECOND);
 #else
     return cpus_get_elapsed_ticks();
